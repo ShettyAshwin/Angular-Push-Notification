@@ -1,0 +1,21 @@
+<section id="notify-container">
+
+    <section id="">
+        <div style="height: 20px"></div>
+        <div >
+        <ul >
+            <li ng-repeat="notify in notifyData" ng-click="acceptClicked(notify.value)" class="notifyText"  >
+                {{notify.value.text}}
+            </li>
+        </ul>
+
+
+        <Section class="notifyCommand" >
+        <input type="button" value="Accept All" ng-click="onAcceptAllClicked()">
+        <input type="button" value="Cancel" ng-click="onCancelClicked()">
+        </Section>
+        </div>
+
+    </section>
+    <div style="height: 35px"></div>
+</section>
